@@ -1,6 +1,6 @@
-class Prologue
+module Prologue extend self
 
-  def self.story_prologue(player_char)
+  def story_prologue(player_char)
     puts AsciiArt.prologue
     Text::Parser::Box.parse(File.read("./data/prologue.en/prologue_1.data"), STDOUT)
     puts AsciiArt.a_bomb

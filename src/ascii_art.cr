@@ -1,9 +1,7 @@
-class AsciiArt
-
-
-  def self.welcome_logo
-    a =  ["Hello and welcome to..\r\n",
-          "
+module  AsciiArt extend self
+  def welcome_logo
+    a = ["Hello and welcome to..\r\n",
+         "
            ▄▄▄  ▄▄▄    ▄▄▄▄      ▄▄▄▄
            ███  ███   ██▀▀██   ▄█▀▀▀▀█
            ████████  ██    ██  ██▄        ▄███▄██   ▄█████▄  ████▄██▄   ▄████▄
@@ -12,10 +10,10 @@ class AsciiArt
            ██    ██   ██▄▄██   █▄▄▄▄▄█▀  ▀██▄▄███  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█
            ▀▀    ▀▀    ▀▀▀▀     ▀▀▀▀▀     ▄▀▀▀ ██   ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀
                                           ▀████▀▀".colorize(:yellow),
-          "\r\n             Version 0.2\r\n"].join
+         "\r\n             Version 0.2\r\n"].join
   end
 
-  def self.prologue
+  def prologue
     a = "
                                      ▄▄▄▄
                                      ▀▀██
@@ -27,7 +25,7 @@ class AsciiArt
        ██                                                 ▀████▀▀".colorize(:yellow)
   end
 
-  def self.chapter_1
+  def chapter_1
     a = "
                  ▄▄                                                            ▄▄▄
                  ██                              ██                           █▀██
@@ -39,20 +37,20 @@ class AsciiArt
                                      ██".colorize(:yellow)
   end
 
-  def self.chapter_2
+  def chapter_2
     a = "
                  ▄▄                                                           ▄▄▄▄▄▄
                  ██                              ██                          █▀▀▀▀▀▀█
         ▄█████▄  ██▄████▄   ▄█████▄  ██▄███▄   ███████    ▄████▄    ██▄████        ▄█
        ██▀    ▀  ██▀   ██   ▀ ▄▄▄██  ██▀  ▀██    ██      ██▄▄▄▄██   ██▀           █▀
-       ██        ██    ██  ▄██▀▀▀██  ██    ██    ██      ██▀▀▀▀▀▀   ██          █▀  
+       ██        ██    ██  ▄██▀▀▀██  ██    ██    ██      ██▀▀▀▀▀▀   ██          █▀
        ▀██▄▄▄▄█  ██    ██  ██▄▄▄███  ███▄▄██▀    ██▄▄▄   ▀██▄▄▄▄█   ██       ▄██▄▄▄▄▄
          ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ██ ▀▀▀       ▀▀▀▀     ▀▀▀▀▀    ▀▀       ▀▀▀▀▀▀▀▀
                                      ██".colorize(:yellow)
   end
 
-  def self.a_bomb
-      a = "
+  def a_bomb
+    a = "
             --_--
          (  -_    _).
        ( ~       )   )
@@ -65,7 +63,7 @@ class AsciiArt
          (../( )\\.))".colorize.bold.red
   end
 
-  def self.a_culdron
+  def a_culdron
     a = "
               (
                )  )
@@ -80,7 +78,7 @@ class AsciiArt
         ().'`       `'.()"
   end
 
-  def self.a_city
+  def a_city
     a = "
                                         _._
                                      .-~ | ~-.
@@ -102,7 +100,7 @@ class AsciiArt
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   end
 
-  def self.a_cup
+  def a_cup
     a = "
 
                   ., '''''''''''''''''' ,.
@@ -123,7 +121,7 @@ class AsciiArt
                          '''''''''''"
   end
 
-  def self.a_desert
+  def a_desert
     a = "
          _.,-*~'^'~*-,._      (                 _.,-*~'^'~*-,._
         |               '*-,._            _.,-*'               '-,._
@@ -132,7 +130,7 @@ class AsciiArt
         `'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'".colorize.light_blue
   end
 
-  def self.a_cars
+  def a_cars
     a = "
               ____                     _____________         _____________
          ____//_]|________        ____//__][__][___|    ____//__][______||
@@ -146,7 +144,7 @@ class AsciiArt
         `------`.  .'-------------------`.  .'`------'"
   end
 
-  def self.a_survivior_eating
+  def a_survivior_eating
     a = "
               ,;;;,
              ;;;;;;;
@@ -159,7 +157,4 @@ class AsciiArt
         /_/ |_|
        ( _\\ ( _\\"
   end
-
-
-
 end

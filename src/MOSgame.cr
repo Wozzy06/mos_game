@@ -6,9 +6,9 @@ require "../src/**"
 require "colorize"
 require "text-parser"
 
-class MOSgame
+module MOSgame extend self
 
-  def self.init
+  def init
     system("clear")
     puts AsciiArt.welcome_logo
     puts "Before we start I need you to answer a few questions please"

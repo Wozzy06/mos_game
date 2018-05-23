@@ -1,6 +1,6 @@
-class Chapter1
+module Chapter1 extend self
 
-  def self.story_chapter1(player_char)
+  def story_chapter1(player_char)
     player_char
     system("clear")
     puts AsciiArt.chapter_1
@@ -30,7 +30,7 @@ class Chapter1
     return player_char
   end
 
-  def self.city(player_char)
+  def city(player_char)
     puts "You go forward to the direction of the city, walking down the hill is much faster then climbing."
     puts "Looking at the moonlight hitting the distance buildings you recall something about the morning, about the sun..."
     if player_char.intelligence >= 1
@@ -70,7 +70,7 @@ class Chapter1
 
 
 
-  def self.desert(player_char)
+  def desert(player_char)
     puts ""
   end
 end
