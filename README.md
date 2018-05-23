@@ -37,7 +37,7 @@ You can also compile the game from sources using the Crystal compiler
 If you have the Crystal compiler then just
 ```
 crystal deps update
-crystal compile libs/MOSgame.cr --release
+crystal build src/MOSgame.cr --release
 ```
 
 Else, download the compiler here:
@@ -46,9 +46,9 @@ http://crystal-lang.org/docs/installation/index.html
 
 ## To-Do list
 
-* More stroy
-* A way to staticlly link the binery and get rid of the /ext/ folder
-* Get help with building on Ubutnu (some one who dont care to compile the game and upload the binery back)
+* More story
+* A way to statically link the binary and get rid of the /ext/ folder
+* Get help with building on Ubuntu (some one who dont care to compile the game and upload the binery back)
 * Feed-back !
 
 Enjoy !
