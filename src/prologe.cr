@@ -1,6 +1,7 @@
+require "../src/char_page"
 module Prologue extend self
 
-  def story_prologue(player_char)
+  def story(player_char : CharPage)
     puts AsciiArt.prologue
     Text::Parser::Box.parse(File.read("./data/prologue.en/prologue_1.data"), STDOUT)
     puts AsciiArt.a_bomb
@@ -44,6 +45,7 @@ module Prologue extend self
     system("clear")
     Text::Parser::Box.parse(File.read("./data/prologue.en/prologue_end.data"), STDOUT)
     gets
+    player_char.expireance += 10
     return player_char
   end
 

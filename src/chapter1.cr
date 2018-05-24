@@ -1,6 +1,7 @@
+require "../src/char_page"
 module Chapter1 extend self
 
-  def story_chapter1(player_char)
+  def story(player_char : CharPage)
     player_char
     system("clear")
     puts AsciiArt.chapter_1

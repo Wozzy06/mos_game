@@ -10,7 +10,7 @@ module  AsciiArt extend self
            ██    ██   ██▄▄██   █▄▄▄▄▄█▀  ▀██▄▄███  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█
            ▀▀    ▀▀    ▀▀▀▀     ▀▀▀▀▀     ▄▀▀▀ ██   ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀
                                           ▀████▀▀".colorize(:yellow),
-         "\r\n             Version 0.2\r\n"].join
+         "\r\n             Version 0.2\r\n".colorize(:red)].join
   end
 
   def prologue
