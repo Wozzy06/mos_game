@@ -31,9 +31,9 @@ module MOSgame extend self
     gets
     system("clear")
     # Start of Prologue
-    player_char = Prologue.story_prologue(player_char)
+    player_char = Prologue.story(player_char)
     # Start of chapter 1
-    player_char = Chapter1.story_chapter1(player_char)
+    player_char = Chapter1.story(player_char)
     if player_char
       player_char.parse_page
     end
